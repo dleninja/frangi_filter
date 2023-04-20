@@ -1,7 +1,6 @@
 clear variables; close all; clc;
 %%
-img = rgb2gray(imread('21_training.tif'));
-img = im2double(img);
+img = mat2gray(imread('fundus.png'));
 %
 options = struct(...
     'FrangiScaleRange', [1 2],...
